@@ -36,5 +36,6 @@ df18.78_2001 <- subset(df18.78,Year == "2001",rate,drop = TRUE)
 df18.78_2002 <- subset(df18.78,Year == "2002",rate,drop = TRUE)
 res <- t.test(df18.78_2001,df18.78_2002,paired = TRUE)
 res
-twoSamplePermutationTestLocation(df18.78_2001,df18.78_2002)
+pertest <- twoSamplePermutationTestLocation(df18.78_2001,df18.78_2002)
+pertest
 ```
